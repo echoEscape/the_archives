@@ -5,6 +5,10 @@ The Archives - A "The Magnus Archives" Fangame
 The Archives - A "The Magnus Archives" Fangame is a 2.5D horror storytelling game in which Jon The Archivist of the Magnus Institute finds himself locked in his office. No power, no way to ask for help he is on the search to find the master key to the exit. As the night progresses hidden horrors awake in an attempt to stop The Archivist's escape.
 
 ---
+## Legal
+The Magnus Archives is owned by Rusty Quill and this game complies to "The Magnus Archives" usage of the Creative Commons Attribution Noncommercial Sharealike License.
+
+---
 ## Inspirations
 The game is inspired by 2010's RPGMaker games such as Ao Oni, Witch's House or Mad Father.
 Additionally the visuals and camera usage is inspired by old PSX games such as Resident Evil and Silent Hill.
