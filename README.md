@@ -6,7 +6,7 @@ The Archives - A "The Magnus Archives" Fangame is a 2.5D horror storytelling gam
 
 ---
 ## Legal
-The Magnus Archives is owned by Rusty Quill and this game complies to "The Magnus Archives" usage of the Creative Commons Attribution Noncommercial Sharealike License.
+The Magnus Archives is owned by Rusty Quill and this game complies to The Magnus Archives usage of the Creative Commons Attribution Noncommercial Sharealike License.
 
 ---
 ## Inspirations
