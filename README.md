@@ -2,8 +2,12 @@ The Archives - A "The Magnus Archives" Fangame
 ============
 [![GitHub Stars](https://img.shields.io/github/stars/echoEscape/the_archives.svg)](https://github.com/echoEscape/the_archives/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/echoEscape/the_archives.svg)](https://github.com/echoEscape/the_archives/issues) [![Current Version](https://img.shields.io/badge/version-0.0.0-yellow.svg)](https://github.com/echoEscape/the_archives)
 
-The Archives is a 2.5D horror storytelling game in which Jon the archivist of the Magnus Institute finds himself locked at his workplace. <br>
-If this wouldn't be bad enough he finds himself stuck without any electricity and the hidden secrets of the building running free.
+The Archives - A "The Magnus Archives" Fangame is a 2.5D horror storytelling game in which Jon The Archivist of the Magnus Institute finds himself locked in his office. No power, no way to ask for help he is on the search to find the master key to the exit. As the night progresses hidden horrors awake in an attempt to stop The Archivist's escape.
+
+---
+## Inspirations
+The game is inspired by 2010's RPGMaker games such as Ao Oni, Witch's House or Mad Father.
+Additionally the visuals and camera usage is inspired by old PSX games such as Resident Evil and Silent Hill.
 
 ---
 ## Tools used
