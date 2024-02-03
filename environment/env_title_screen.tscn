@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0jxn80iob78l"]
+
+[ext_resource type="Texture2D" uid="uid://ba6mwquk7jwuv" path="res://assets/environment/titlescreen.png" id="1_5psg0"]
+
+[sub_resource type="Animation" id="Animation_lkpsv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("anim_fadeout_overlay:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fqd5m"]
+resource_name = "anim_black2transparend_fade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("anim_fadeout_overlay:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_amu82"]
+_data = {
+"RESET": SubResource("Animation_lkpsv"),
+"anim_black2transparend_fade": SubResource("Animation_fqd5m")
+}
+
+[node name="env_title_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="background_image" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(960, 531)
+scale = Vector2(4.75, 4.75)
+texture = ExtResource("1_5psg0")
+
+[node name="anim_fadeout_overlay" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -34.0
+offset_top = -48.0
+offset_right = 1966.0
+offset_bottom = 1152.0
+color = Color(0, 0, 0, 1)
+
+[node name="anim_fade_in" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_amu82")
+}

@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://c345j7vymrd8w"]
+
+[ext_resource type="Script" path="res://environment/env_master.gd" id="1_60yox"]
+[ext_resource type="Texture2D" uid="uid://bjinkwjstx7ro" path="res://assets/environment/spr_rooms.png" id="1_dtkdj"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7jyw"]
+texture = ExtResource("1_dtkdj")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+5:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+5:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_eq2uy"]
+sources/0 = SubResource("TileSetAtlasSource_o7jyw")
+
+[node name="env_master" type="Node2D"]
+script = ExtResource("1_60yox")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_eq2uy")
+format = 2

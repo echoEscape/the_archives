@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://2nv0rtt40kvb"]
+
+[ext_resource type="Script" path="res://script/scr_char_jon.gd" id="1_7on5d"]
+[ext_resource type="Texture2D" uid="uid://dwfht6sxf2ef5" path="res://assets/character/spr_jon.png" id="1_iriav"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nucax"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_iriav")
+uv1_scale = Vector3(0.16, 0.25, 0.16)
+texture_filter = 2
+billboard_mode = 2
+
+[sub_resource type="QuadMesh" id="QuadMesh_p5vha"]
+lightmap_size_hint = Vector2i(7, 7)
+material = SubResource("StandardMaterial3D_nucax")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rg2oj"]
+points = PackedVector3Array(0.5, 0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_7on5d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_p5vha")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_rg2oj")
+
+[node name="TwistPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="PitchPivot" type="Node3D" parent="TwistPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="TwistPivot/PitchPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
